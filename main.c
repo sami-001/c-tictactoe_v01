@@ -36,6 +36,7 @@ void checkDraw();
 //                   2. winning before computer by one turn does not work
 //                     ^- should be fixed   
 
+
 int main()
 {   
 
@@ -47,7 +48,8 @@ int main()
     displayBoard();
 
 
-    while (winner == ' ') {
+    while (winner == ' ') 
+    {
 
         playerPlay();
         checkWinner();
@@ -56,10 +58,6 @@ int main()
         checkWinner();
 
     }
-
-    // if again? (y/n) -> n, in the playAgain(), it will break the cycle. and start here
-    return 0;
-
 }
 
 
@@ -80,7 +78,7 @@ void playAgain() {
 
         if (again == 'n') {
             printf("\n");
-            break;
+            exit(0);
         }
         
 
