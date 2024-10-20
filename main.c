@@ -3,7 +3,6 @@
 #include <math.h>
 #include <time.h>
 
-
 char board[3][3];
 
 int x;
@@ -77,7 +76,7 @@ void playAgain() {
         }
 
         if (again == 'n') {
-            printf("\n");
+            printf(" \n");
             exit(0);
         }
         
